@@ -286,7 +286,7 @@ will be able to apply this
 
 63
 00:03:55,329 --> 00:03:59,169
-to any language even if your programming
+to any language even if you're programming
 in assembly
 
 64
@@ -304,7 +304,7 @@ you can apply immediately
 
 67
 00:04:09,720 --> 00:04:13,150
-in whatever language your happening
+in whatever language you're happening
 to use.
 
 68
