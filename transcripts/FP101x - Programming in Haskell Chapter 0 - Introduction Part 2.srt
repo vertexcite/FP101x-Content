@@ -1,621 +1,878 @@
 1
-00:00:01,520 --> 00:00:03,560
-Welcome everybody, to the
+00:00:01,810 --> 00:00:03,050
+Welcome back everybody
 
 2
-00:00:03,560 --> 00:00:08,849
-FP101x functional programming MOOC.
-I'm really happy that we can do this one
+00:00:03,050 --> 00:00:06,930
+to FP101x.
 
 3
-00:00:08,849 --> 00:00:12,820
-as a MOOC with exercises and
-everything.
+00:00:06,930 --> 00:00:09,990
+
 
 4
-00:00:12,820 --> 00:00:17,820
+00:00:09,990 --> 00:00:13,070
 Let's get started
 
 5
-00:00:17,820 --> 00:00:23,480
-immediately. One thing that I wanted
-to tell you before we get going
+00:00:13,070 --> 00:00:16,359
+by giving a little bit of the history of
+functional programming.
 
 6
-00:00:23,480 --> 00:00:28,160
-is that this is a MOOC about functional
-programming that's what the title says
+00:00:16,359 --> 00:00:19,689
+When we look at languages like Java or
 
 7
-00:00:28,160 --> 00:00:33,090
-FP101 functional programming. This is
-not a course on Haskell, were using
+00:00:19,689 --> 00:00:25,359
+JavaScript, it's easy to forget that the
+concepts of functional programming
 
 8
-00:00:33,090 --> 00:00:33,920
-Haskell
+00:00:25,359 --> 00:00:28,779
+are actually quite old and they were
 
 9
-00:00:33,920 --> 00:00:39,379
-as a functional language but we're not
-learning to program Haskell per se.
+00:00:28,779 --> 00:00:32,250
+invented way before most of us were
 
 10
-00:00:39,379 --> 00:00:42,469
-Let me tell you a little bit 
-of a story.
+00:00:32,250 --> 00:00:35,540
+even born.
 
 11
-00:00:42,469 --> 00:00:46,000
-I travel a lot, going to conferences,
+00:00:35,540 --> 00:00:39,870
+Here we see Alonzo Church. 
+Alonzo Church
 
 12
-00:00:46,000 --> 00:00:49,200
-giving courses et cetera 
+00:00:39,870 --> 00:00:44,040
+in the 1930s, developed the lambda
+calculus.
 
 13
-00:00:49,200 --> 00:00:52,989
-and during those travels I have ample 
-time to watch TV.
+00:00:44,040 --> 00:00:47,960
+He developed the lambda calculus as
+a basis
 
 14
-00:00:52,989 --> 00:00:57,520
-One night I was zapping through the channels
+00:00:47,960 --> 00:00:51,930
+for mathematics. He wanted to
+find a way
 
 15
-00:00:57,520 --> 00:01:00,770
-and there was one of those survival
-shows
+00:00:51,930 --> 00:00:55,100
+to describe the foundations of
+mathematics
 
 16
-00:01:00,770 --> 00:01:03,960
-where this guy was trying to make up
+00:00:55,100 --> 00:00:58,140
+and it's quite remarkable that it turned
+out
 
 17
-00:01:03,960 --> 00:01:07,340
-camp at night and trying to make a fire
+00:00:58,140 --> 00:01:02,399
+that his work in the 1930s became
 
 18
-00:01:07,340 --> 00:01:10,939
-but his matches were wet. 
+00:01:02,399 --> 00:01:06,619
+the basis of most of our programming
+languages today.
 
 19
-00:01:10,939 --> 00:01:14,030
-He could have gotten in panic and said:
+00:01:06,619 --> 00:01:10,360
+If you look at Javascript, the language
+that powers the web - 
 
 20
-00:01:14,030 --> 00:01:17,250
-my matches are wet I cannot make a fire.
+00:01:10,360 --> 00:01:14,369
+and we all know that in JavaScript
+functions
 
 21
-00:01:17,250 --> 00:01:20,680
-What he did instead is he took a
-cell phone
+00:01:14,369 --> 00:01:17,670
+are very important - so one could say
 
 22
-00:01:20,680 --> 00:01:23,840
-and his knife and he
+00:01:17,670 --> 00:01:20,780
+that the web is powered by the lambda
+calculus.
 
 23
-00:01:23,840 --> 00:01:27,869
-took the battery out of his cell phone,
-opened the battery
+00:01:20,780 --> 00:01:24,250
+Java 8 now
 
 24
-00:01:27,869 --> 00:01:30,869
-and then the battery started to combust.
+00:01:24,250 --> 00:01:28,290
+has lambda expressions and C++
+has
 
 25
-00:01:30,869 --> 00:01:35,220
-That's what he used to start a fire.
-And this is the same
+00:01:28,290 --> 00:01:32,619
+lambda expressions... there is no
+programming language in use today
 
 26
-00:01:35,220 --> 00:01:38,380
-attitude that I want to teach you in
-this course.
+00:01:32,619 --> 00:01:35,970
+that doesn't support this concept that
 
 27
-00:01:38,380 --> 00:01:42,530
-while we're learning to do
-functional programming using haskell so
+00:01:35,970 --> 00:01:41,720
+Alonzo Church invented in the 1930s.
+If we go
 
 28
-00:01:42,530 --> 00:01:44,159
-haskell our matches,
+00:01:41,720 --> 00:01:44,970
+a little bit more towards
 
 29
-00:01:44,159 --> 00:01:47,860
-when at work you don't have matches
-available
+00:01:44,970 --> 00:01:48,439
+current times, in 1950s, John
+McCarthy
 
 30
-00:01:47,860 --> 00:01:52,049
-you still can do functional programming.
-Sometimes you have to smash your
+00:01:48,439 --> 00:01:53,009
+developed Lisp, which was one of the
+very first
 
 31
-00:01:52,049 --> 00:01:52,950
-cell phone
+00:01:53,009 --> 00:01:57,979
+programming languages ever designed, but
+it was also the first
 
 32
-00:01:52,950 --> 00:01:58,320
-and open your battery to start a fire.
-Don't think that this is about
+00:01:57,979 --> 00:02:02,070
+functional programming language.
+John McCarthy
 
 33
-00:01:58,320 --> 00:02:02,030
-haskell per se, we're going to teach
-functional programming
+00:02:02,070 --> 00:02:06,659
+was influenced by the lambda calculus,
+but he also
 
 34
-00:02:02,030 --> 00:02:06,299
-using Haskell. 
-Alright, let's get
+00:02:06,659 --> 00:02:10,629
+had imperative assignment
 
 35
-00:02:06,299 --> 00:02:09,869
-started then.
+00:02:10,629 --> 00:02:12,290
+in Lisp.
 
 36
-00:02:09,869 --> 00:02:13,090
-What's the problem that we're trying to
-solve? The problem
+00:02:12,290 --> 00:02:15,670
+In some sense you can say that Lisp
+was one of the
 
 37
-00:02:13,090 --> 00:02:17,000
-is the so called software crisis. 
-We all know
+00:02:15,670 --> 00:02:20,019
+first modern functional languages that
+combines
 
 38
-00:02:17,000 --> 00:02:21,090
-as developers that writing code is
-pretty difficult.
+00:02:20,019 --> 00:02:23,310
+the ideas from the pure lambda calculus
 
 39
-00:02:21,090 --> 00:02:24,180
-We're writing huge programs and
+00:02:23,310 --> 00:02:27,469
+with some of the imperative features from
 
 40
-00:02:24,180 --> 00:02:28,500
-what we need to do is to reduce the
-time
+00:02:27,469 --> 00:02:33,040
+programming languages. 
+In 1960,
 
 41
-00:02:28,500 --> 00:02:32,830
-and the cost of development. 
-We want to deliver software fast
+00:02:33,040 --> 00:02:36,700
+Peter Landin developed ISWIM.
 
 42
-00:02:32,830 --> 00:02:37,200
-and we want to deliver correct software. 
-The question is
+00:02:36,700 --> 00:02:40,150
+ISWIM means "If You See What I Mean"
 
 43
-00:02:37,200 --> 00:02:40,440
-how can we make programs
+00:02:40,150 --> 00:02:44,200
+and that was the first pure functional
+language
 
 44
-00:02:40,440 --> 00:02:44,260
-such that that we are confident that our
-programs work
+00:02:44,200 --> 00:02:48,049
+based on the lambda calculus, which means
 
 45
-00:02:44,260 --> 00:02:47,609
-and how can we make code
+00:02:48,049 --> 00:02:51,930
+there was no assignment - it was only
+pure functions.
 
 46
-00:02:47,609 --> 00:02:50,959
-such that this code is delivered fast.
+00:02:51,930 --> 00:02:57,760
+In the 1970s, John Backus
 
 47
-00:02:50,959 --> 00:02:54,370
-It doesn't take years to deliver but
-it takes 
+00:02:57,760 --> 00:03:01,340
+developed FP, which stands for
 
 48
-00:02:54,370 --> 00:03:00,970
-months or as long as it needs to be. 
-One way to do that, and we see this now
+00:03:01,340 --> 00:03:04,349
+"Functional Programming". John Backus
 
 49
-00:03:00,970 --> 00:03:06,260
-in all modern programming languages, is to
-add features to our languages
+00:03:04,349 --> 00:03:07,900
+happened to be one of the designers of Fortran,
 
 50
-00:03:06,260 --> 00:03:11,310
-that allow programs to be written
-clearly concisely and at a high level of
+00:03:07,900 --> 00:03:11,629
+which was designed around the same time
 
 51
-00:03:11,310 --> 00:03:12,220
-abstraction.
+00:03:11,629 --> 00:03:14,970
+as Lisp and was a very imperative
+language.
 
 52
-00:03:12,220 --> 00:03:16,319
-And the techniques that we use in these
-modern languages
+00:03:14,970 --> 00:03:19,840
+He designed this new language in
+the seventies
 
 53
-00:03:16,319 --> 00:03:19,880
-are all based on functional programming.
-These techniques
+00:03:19,840 --> 00:03:22,900
+that emphasizes higher-order functions
 
 54
-00:03:19,880 --> 00:03:23,989
-are all based on concepts from the 
-lambda calculus.
+00:03:22,900 --> 00:03:26,829
+and specifically reasoning about
+programs.
 
 55
-00:03:23,989 --> 00:03:27,410
-And Haskell is a
+00:03:26,829 --> 00:03:30,769
+You want to be able to reason about
+the correctness
 
 56
-00:03:27,410 --> 00:03:30,660
-functional language that is pure and
-therefore
+00:03:30,769 --> 00:03:33,989
+of your code and FP and
 
 57
-00:03:30,660 --> 00:03:34,669
-a really good vehicle to teach these
-concept.
+00:03:33,989 --> 00:03:38,510
+focused on that. 
+Also in the seventies,
 
 58
-00:03:34,669 --> 00:03:39,019
-Functional languages
+00:03:38,510 --> 00:03:41,959
+Robin Milner, that you see here,
 
 59
-00:03:39,019 --> 00:03:42,799
-therefore provide a very elegant framework
+00:03:41,959 --> 00:03:45,019
+developed ML.
 
 60
-00:03:42,799 --> 00:03:46,120
-to write code at a high level of
-abstraction.
+00:03:45,019 --> 00:03:49,440
+ML also was a a hybrid language that
 
 61
-00:03:46,120 --> 00:03:50,139
-But as I said, haskell is just our
-vehicle.
+00:03:49,440 --> 00:03:53,139
+took ideas from pure functional
+programming, but also
 
 62
-00:03:50,139 --> 00:03:55,329
-What we learn in this course, you
-will be able to apply this
+00:03:53,139 --> 00:03:56,239
+allows imperative assignments.
 
 63
-00:03:55,329 --> 00:03:59,169
-to any language even if your programming
-in assembly
+00:03:56,239 --> 00:03:59,729
+One interesting detail about ML is that
 
 64
-00:03:59,169 --> 00:04:02,599
-or in Java or in PHP
+00:03:59,729 --> 00:04:02,989
+ML was originally designed as a
+scripting language.
 
 65
-00:04:02,599 --> 00:04:06,489
-or in javascript, all the ideas that you
-will learn here
+00:04:02,989 --> 00:04:07,620
+It was designed as a scripting language
+to allow people to write proofs.
 
 66
-00:04:06,489 --> 00:04:09,720
-you can apply immediately
+00:04:07,620 --> 00:04:12,099
+When you're writing mathematical
+proofs, there's a lot of boilerplate,
 
 67
-00:04:09,720 --> 00:04:13,150
-in whatever language your happening
-to use.
+00:04:12,099 --> 00:04:15,939
+a lot of steps that you have to do and
+in order to automate that,
 
 68
-00:04:13,150 --> 00:04:16,930
-What is a functional programming
-language?
+00:04:15,939 --> 00:04:20,359
+Milner and his coworkers developed ML
 
 69
-00:04:16,930 --> 00:04:20,700
-The ideas about that
+00:04:20,359 --> 00:04:25,030
+such that you could write scripts that
+would do all these tedious
 
 70
-00:04:20,700 --> 00:04:24,960
-vary, there's no real clear
-definition.
+00:04:25,030 --> 00:04:28,850
+steps for you. 
+One of the
 
 71
-00:04:24,960 --> 00:04:28,740
-If we take a very purist approach a
-functional language
+00:04:28,850 --> 00:04:33,940
+advances of ML - and keep in mind
+that this was in
 
 72
-00:04:28,740 --> 00:04:32,800
-is a language in which we program using
-mathematical functions.
+00:04:33,940 --> 00:04:37,530
+the seventies - was type inference.
 
 73
-00:04:32,800 --> 00:04:37,980
-And that definition applies to Haskell,
-which is a pure language, one of the very
+00:04:37,530 --> 00:04:43,000
+So you could write a function and the
+compiler would infer the type for you.
 
 74
-00:04:37,980 --> 00:04:38,830
-few
+00:04:43,000 --> 00:04:46,930
+ML also had
 
 75
-00:04:38,830 --> 00:04:42,320
-functional programming languages that is
-pure. But of course
+00:04:46,930 --> 00:04:50,430
+polymorphic types, or as we call them
 
 76
-00:04:42,320 --> 00:04:46,860
-and when I say that we can use these
-techniques to program also in other
+00:04:50,430 --> 00:04:55,490
+today mostly, generic types, where you
+could have
 
 77
-00:04:46,860 --> 00:04:47,670
-languages
+00:04:55,490 --> 00:05:00,630
+a list of T and then instantiate T
+with Int or String or
 
 78
-00:04:47,670 --> 00:04:52,020
-we cannot use that definition.
+00:05:00,630 --> 00:05:07,100
+perhaps even another list. 
+These concepts of type inference
 
 79
-00:04:52,020 --> 00:04:56,020
-What will use in this course is the
-following definition: 
+00:05:07,100 --> 00:05:11,240
+and generics are actually very old and
+it
 
 80
-00:04:56,020 --> 00:04:56,930
-functional programming
+00:05:11,240 --> 00:05:14,360
+took many many decades for these ideas
 
 81
-00:04:56,930 --> 00:05:00,900
-is a style of programming in which
+00:05:14,360 --> 00:05:17,490
+to move from academia
 
 82
-00:05:00,900 --> 00:05:04,310
-expressions are more important than
-using statements.
+00:05:17,490 --> 00:05:22,660
+into the mainstream.
 
 83
-00:05:04,310 --> 00:05:09,000
-What we want to do is: we want to
-compose programs using expressions
+00:05:22,660 --> 00:05:25,950
+In the seventies and eighties,
+David Turner
 
 84
-00:05:09,000 --> 00:05:13,800
-and these expressions deliver a value so
-we take two expressions that deliver a
+00:05:25,950 --> 00:05:29,590
+developed a number of languages, starting
+with SASL,
 
 85
-00:05:13,800 --> 00:05:14,530
-value
+00:05:29,590 --> 00:05:33,500
+then KRC and ultimately culminating
 
 86
-00:05:14,530 --> 00:05:18,620
-and compose them in a bigger expression.
+00:05:33,500 --> 00:05:37,730
+in Miranda. These were all lazy
+functional languages
 
 87
-00:05:18,620 --> 00:05:23,780
-Compare and contrast that with writing
-your program using statements.
+00:05:37,730 --> 00:05:41,210
+and we will see the difference between
+lazy
 
 88
-00:05:23,780 --> 00:05:28,040
-When you compose statements the
-statements have an implicit side-effect
+00:05:41,210 --> 00:05:44,390
+and strict functional languages later in
+this course.
 
 89
-00:05:28,040 --> 00:05:32,410
-on the global state and they
-communicate values via that global
+00:05:44,390 --> 00:05:49,660
+David Turner has been extremely
+influential because
 
 90
-00:05:32,410 --> 00:05:32,880
-state.
+00:05:49,660 --> 00:05:54,290
+Haskell, the language that we're
+using in this course,
 
 91
-00:05:32,880 --> 00:05:36,000
-Whereas in an expression based
+00:05:54,290 --> 00:05:57,560
+is also a lazy language and it's built
 
 92
-00:05:36,000 --> 00:05:40,620
-programming style expressions return
-values
+00:05:57,560 --> 00:06:01,730
+on much of the work that David
+Turner has done
 
 93
-00:05:40,620 --> 00:05:46,320
-and we compose these values directly.
-A functional programming language
+00:06:01,730 --> 00:06:07,220
+on Miranda, SASL and KRC. 
+My first functional language
 
 94
-00:05:46,320 --> 00:05:50,190
-is a language that supports and
-encourages
+00:06:07,220 --> 00:06:10,470
+ever, when I started to study computer
+science
 
 95
-00:05:50,190 --> 00:05:53,410
-writing code using expressions.
+00:06:10,470 --> 00:06:14,380
+in the eighties, was SASL, so I still
 
 96
-00:05:53,410 --> 00:05:57,230
-As I said before, most modern
-languages
+00:06:14,380 --> 00:06:17,440
+have a special place in my heart for SASL
 
 97
-00:05:57,230 --> 00:06:01,240
-now support this style. 
-And they support the style
+00:06:17,440 --> 00:06:23,230
+and we'll definitely have a look
 
 98
-00:06:01,240 --> 00:06:04,850
-specifically by supporting lambda
-expressions.
+00:06:23,230 --> 00:06:27,690
+in one of the later sessions at SASL,
 
 99
-00:06:04,850 --> 00:06:08,830
-We'll see examples of functional
-programming
+00:06:27,690 --> 00:06:31,470
+because SASL in some sense is
+the mother
 
 100
-00:06:08,830 --> 00:06:11,960
-in many many languages as we progress
+00:06:31,470 --> 00:06:34,910
+of Haskell.
 
 101
-00:06:11,960 --> 00:06:15,430
-through this course. Let's
+00:06:34,910 --> 00:06:37,980
+Talking about Haskell, around
 
 102
-00:06:15,430 --> 00:06:19,190
-start with our first fragment of code
-here. 
+00:06:37,980 --> 00:06:41,000
+1987,
 
 103
-00:06:19,190 --> 00:06:22,440
-This is some old-fashioned Java
+00:06:41,000 --> 00:06:46,870
+a group of programming
+language researchers and functional language
 
 104
-00:06:22,440 --> 00:06:27,070
-where we're computing the sum of the
-integers from one to ten.
+00:06:46,870 --> 00:06:47,810
+researchers
 
 105
-00:06:27,070 --> 00:06:31,250
-The way we do that, as I said, in the
-traditional imperative
+00:06:47,810 --> 00:06:52,500
+started the development of
+Haskell and the idea was to
 
 106
-00:06:31,250 --> 00:06:33,820
-style, this is based by doing
+00:06:52,500 --> 00:06:56,520
+build a standard language that people
+could use to experiment.
 
 107
-00:06:33,820 --> 00:06:38,530
-statements. The first thing we do
-is we declare a variable total
+00:06:56,520 --> 00:07:01,380
+Because if you want to experiment
+with, say a new type system,
 
 108
-00:06:38,530 --> 00:06:41,920
-of type int. We initialize it with zero
+00:07:01,380 --> 00:07:04,810
+it's a lot of work to build the whole
+infrastructure
 
 109
-00:06:41,920 --> 00:06:46,380
-and then we write a for loop with a
-loop variable.
+00:07:04,810 --> 00:07:09,140
+of the language, the parser, et cetera,
+for all you want to do
 
 110
-00:06:46,380 --> 00:06:49,660
-That int i, that you see there and then we
+00:07:09,140 --> 00:07:12,820
+is to study this new type system.
 
 111
-00:06:49,660 --> 00:06:53,530
-assign to that the total
-variable:
+00:07:12,820 --> 00:07:15,950
+Haskell has sometimes been called
 
 112
-00:06:53,530 --> 00:06:57,100
-total variable + i. Here you see that
+00:07:15,950 --> 00:07:19,420
+Petri dish for programming language
+research
 
 113
-00:06:57,100 --> 00:07:00,240
-the program is written
+00:07:19,420 --> 00:07:24,100
+and it has served that goal and there
+have been written many many papers
 
 114
-00:07:00,240 --> 00:07:03,860
-in an imperative style. 
-We have statements,
+00:07:24,100 --> 00:07:27,360
+where Haskell is used as
 
 115
-00:07:03,860 --> 00:07:06,990
-we have mutable state and we
+00:07:27,360 --> 00:07:32,540
+as the substrate to do experiments,
+but also Haskell has been quite
 
 116
-00:07:06,990 --> 00:07:10,660
-imperatively execute statement after
-statement
+00:07:32,540 --> 00:07:34,900
+successful as a language by itself.
 
 117
-00:07:10,660 --> 00:07:14,160
-updating the state to compute the result.
+00:07:34,900 --> 00:07:38,250
+Haskell will also be
 
 118
-00:07:14,160 --> 00:07:18,710
-Now here is how you would write that same
-program
+00:07:38,250 --> 00:07:44,430
+the language that we will use in 
+this course. In 2003,
 
 119
-00:07:18,710 --> 00:07:21,980
-in Haskell. The first thing you see is
-that it's
+00:07:44,430 --> 00:07:48,060
+it's kind of interesting,
 
 120
-00:07:21,980 --> 00:07:26,980
-much more concise but the other thing is
-that there's no statement. It's just
+00:07:48,060 --> 00:07:52,200
+the Haskell 98 report was published, so
+that was quite some years
 
 121
-00:07:26,980 --> 00:07:30,230
-two expressions. 
-The expression you see
+00:07:52,200 --> 00:07:55,850
+after an the language was finished.
 
 122
-00:07:30,230 --> 00:07:33,430
-here
+00:07:55,850 --> 00:07:59,020
+The goal of Haskell 98
 
 123
-00:07:33,430 --> 00:07:36,740
-on the right. One dot dot ten.
+00:07:59,020 --> 00:08:02,080
+was to define a stable version of the
+language.
 
 124
-00:07:36,740 --> 00:07:40,300
-Creates a list of the integers from one
-to ten.
+00:08:02,080 --> 00:08:05,120
+Haskell being this research vehicle
 
 125
-00:07:40,300 --> 00:07:43,920
-And then we just sum those integers up.
+00:08:05,120 --> 00:08:09,230
+has had a lot of extensions and in order to
+make this language
 
 126
-00:07:43,920 --> 00:07:47,380
-So here you see that we're composing
+00:08:09,230 --> 00:08:13,420
+used in the mainstream,
 
 127
-00:07:47,380 --> 00:07:52,670
-the code by having an expression. 
-One that creates this list from one to ten
+00:08:13,420 --> 00:08:17,670
+the idea was that we needed a stable
+version of the language
 
 128
-00:07:52,670 --> 00:07:56,600
-and then we apply that value
+00:08:17,670 --> 00:08:21,020
+that only had features that were
 
 129
-00:07:56,600 --> 00:07:59,680
-to a function sum that will sum things
+00:08:21,020 --> 00:08:25,650
+consistent and finished, such that
+people could rely on them.
 
 130
-00:07:59,680 --> 00:08:03,080
-up for us. In Java 8
+00:08:25,650 --> 00:08:28,990
+In the meantime, Haskell had kept
 
 131
-00:08:03,080 --> 00:08:06,670
-you can write the same code
+00:08:28,990 --> 00:08:33,110
+evolving, but in this course
+we will be sticking
 
 132
-00:08:06,670 --> 00:08:10,040
-using Java 8 streams, we will
+00:08:33,110 --> 00:08:36,860
+to the Haskell 98 subset.
 
 133
-00:08:10,040 --> 00:08:14,070
-dive deeper into Java 8 and a future
+00:08:36,860 --> 00:08:40,979
+If you're using GHC, as you will see in the
+next lecture, GHC
 
 134
-00:08:14,070 --> 00:08:17,590
-lesson but for now here is the way
+00:08:40,979 --> 00:08:44,400
+has many extensions, but that
 
 135
-00:08:17,590 --> 00:08:21,990
-we do this in Haskell. 
-Thank you
+00:08:44,400 --> 00:08:45,390
+is
 
 136
-00:08:21,990 --> 00:08:24,590
-and see you in part two.
+00:08:45,390 --> 00:08:49,650
+a topic for a future course.
+
+137
+00:08:49,650 --> 00:08:52,880
+We will stick to just Haskell 98.
+
+138
+00:08:52,880 --> 00:08:56,150
+If we look
+
+139
+00:08:56,150 --> 00:09:01,600
+at the status of Haskell today, there
+is the Haskell platform,
+
+140
+00:09:01,600 --> 00:09:07,170
+which you can download and the course
+website will have all the information
+
+141
+00:09:07,170 --> 00:09:12,010
+about that. The course website 
+will also have information
+
+142
+00:09:12,010 --> 00:09:15,010
+about other ways to run Haskell programs
+
+143
+00:09:15,010 --> 00:09:19,250
+and links to other languages that can
+you use to do the exercises,
+
+144
+00:09:19,250 --> 00:09:24,440
+but the Haskell platform provides an
+implementation of the Haskell language
+
+145
+00:09:24,440 --> 00:09:29,620
+plus the standard libraries for the major
+platforms: Windows, Mac
+
+146
+00:09:29,620 --> 00:09:33,800
+and Linux.
+
+147
+00:09:33,800 --> 00:09:38,480
+This Haskell platform is used all across
+the industry
+
+148
+00:09:38,480 --> 00:09:41,710
+to deliver real software
+
+149
+00:09:41,710 --> 00:09:44,960
+and also, as we will see,
+
+150
+00:09:44,960 --> 00:09:48,750
+you can see the influence of Haskell on
+other languages.
+
+151
+00:09:48,750 --> 00:09:52,040
+Let's finish here
+
+152
+00:09:52,040 --> 00:09:55,550
+with a small Haskell program
+
+153
+00:09:55,550 --> 00:09:58,740
+to show the conciseness of Haskell.
+
+154
+00:09:58,740 --> 00:10:02,459
+This program here,
+
+155
+00:10:02,459 --> 00:10:05,560
+what it does
+
+156
+00:10:05,560 --> 00:10:09,050
+is: it sorts a list using the quicksort
+algorithm.
+
+157
+00:10:09,050 --> 00:10:13,709
+Here's the code; we'll go through it and
+
+158
+00:10:13,709 --> 00:10:17,750
+after a few lectures you will be able to
+write code like this yourself.
+
+159
+00:10:17,750 --> 00:10:21,850
+The first thing when we sort a list
+
+160
+00:10:21,850 --> 00:10:26,010
+is: when we have the empty list -
+that's the first case here -
+
+161
+00:10:26,010 --> 00:10:29,720
+we want to sort the empty list and 
+
+162
+00:10:29,720 --> 00:10:33,310
+the result is the empty list. The
+empty list is already sorted.
+
+163
+00:10:33,310 --> 00:10:37,140
+Now the next step here says that if
+we have a list
+
+164
+00:10:37,140 --> 00:10:40,140
+xs that starts with value x,
+
+165
+00:10:40,140 --> 00:10:43,150
+what we do is: we first
+
+166
+00:10:43,150 --> 00:10:47,410
+take all the elements a that are less
+than x,
+
+167
+00:10:47,410 --> 00:10:51,730
+we put them in the list called ys then
+we take
+
+168
+00:10:51,730 --> 00:10:57,040
+all the values b that are larger than x,
+we put them in the list
+
+169
+00:10:57,040 --> 00:10:58,280
+zs
+
+170
+00:10:58,280 --> 00:11:01,320
+and then what we do is we recursively
+sort
+
+171
+00:11:01,320 --> 00:11:05,310
+ys with the function f,
+
+172
+00:11:05,310 --> 00:11:08,330
+so all the values that are less than x
+
+173
+00:11:08,330 --> 00:11:13,140
+will be sorted. Then we sort all the
+values that are larger than x
+
+174
+00:11:13,140 --> 00:11:16,290
+(that was zs) and then we concatenate
+
+175
+00:11:16,290 --> 00:11:19,880
+these two lists with x in the middle.
+
+176
+00:11:19,880 --> 00:11:23,060
+You can easily see that
+
+177
+00:11:23,060 --> 00:11:26,140
+the effect of this recursive
+
+178
+00:11:26,140 --> 00:11:30,430
+call is that we now get a sorted list.
+
+179
+00:11:30,430 --> 00:11:33,620
+To warn you: this program
+
+180
+00:11:33,620 --> 00:11:37,260
+just shows you the algorithmic structure
+
+181
+00:11:37,260 --> 00:11:41,160
+of quicksort - it shows you the
+recursive decomposition
+
+182
+00:11:41,160 --> 00:11:44,930
+of the sorting. The real quicksort, in
+an imperative
+
+183
+00:11:44,930 --> 00:11:48,370
+language, doesn't create new lists like
+here
+
+184
+00:11:48,370 --> 00:11:54,260
+(these 2 lists), but it take a single list
+and mutates the values in place,
+
+185
+00:11:54,260 --> 00:11:58,490
+such that it only uses the space of 
+that single list.
+
+186
+00:11:58,490 --> 00:12:01,910
+But still, if you want to
+
+187
+00:12:01,910 --> 00:12:04,940
+study the algorithmic structure of 
+quicksort,
+
+188
+00:12:04,940 --> 00:12:08,470
+this program is quite elegant.
+
+189
+00:12:08,470 --> 00:12:12,290
+Of course, we can start with this
+program and then we may want to
+
+190
+00:12:12,290 --> 00:12:13,220
+implement that
+
+191
+00:12:13,220 --> 00:12:16,860
+in a more efficient way by mutating
+state.
+
+192
+00:12:16,860 --> 00:12:20,620
+Thank you very much!
+
+193
+00:12:20,620 --> 00:12:24,600
+This was the end of the first lecture.
+Happy hacking
+
+194
+00:12:24,600 --> 00:12:27,630
+with the exercises on the website
+
+195
+00:12:27,630 --> 00:12:30,480
+and see you next week for lecture 2.
 
