@@ -122,7 +122,7 @@ functional programming using haskell so
 
 28
 00:01:42,530 --> 00:01:44,159
-haskell our matches,
+haskell's our matches,
 
 29
 00:01:44,159 --> 00:01:47,860
