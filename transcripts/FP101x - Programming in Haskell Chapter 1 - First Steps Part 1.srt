@@ -655,7 +655,7 @@ if we call sum of [1,2,3,4,5]
 
 143
 00:09:04,890 --> 00:09:09,040
-the result is 50.
+the result is 15.
 Product
 
 144
