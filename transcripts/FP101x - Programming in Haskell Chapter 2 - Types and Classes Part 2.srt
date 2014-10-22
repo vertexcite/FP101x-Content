@@ -64,12 +64,12 @@ A function is a mapping from values
 
 15
 00:00:54,510 --> 00:00:58,210
-of one type to values of another time
+of one type to values of another type
 Here are two
 
 16
 00:00:58,210 --> 00:01:01,879
-very simple examples a function types
+very simple examples of function types
 the first one
 
 17
@@ -79,11 +79,11 @@ a boolean
 
 18
 00:01:06,869 --> 00:01:10,030
-and returns an other boolean.
+and returns another boolean.
 
 19
 00:01:10,030 --> 00:01:13,530
-Nothing to complicated.
+Nothing too complicated.
 
 20
 00:01:13,530 --> 00:01:16,790
@@ -152,7 +152,7 @@ Now you noticed that we write
 
 35
 00:02:11,820 --> 00:02:15,150
-the arrow of the function type as a nice
+the arrow of the function type is a nice
 arrow,
 
 36
@@ -269,7 +269,7 @@ defining add
 
 60
 00:03:57,110 --> 00:04:00,790
-to take a tuple of integers and return
+to take a tuple of integers and return an
 integer
 
 61
@@ -302,7 +302,7 @@ here we see that from this arrow,
 
 67
 00:04:23,979 --> 00:04:28,009
-that takes an integer and returns a
+that it takes an integer and returns a
 function
 
 68
@@ -435,7 +435,7 @@ comes from, just like Pascal
 
 97
 00:06:17,439 --> 00:06:20,990
-and was named after Blaise Pascal,
+was named after Blaise Pascal,
 
 98
 00:06:20,990 --> 00:06:24,509
@@ -667,7 +667,7 @@ in the curried form.
 
 148
 00:09:42,260 --> 00:09:45,830
-For example the function take here take 5:
+For example the function take here, take 5:
 
 149
 00:09:45,830 --> 00:09:50,530
@@ -681,7 +681,7 @@ from list to list,
 151
 00:09:54,970 --> 00:09:58,220
 which means that we can partially
-applied
+apply
 
 152
 00:09:58,220 --> 00:10:01,740
