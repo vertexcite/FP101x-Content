@@ -765,7 +765,7 @@ Num a => [a] -> a. What this means
 
 174
 00:10:47,960 --> 00:10:51,040
-is that some doesn't take
+is that sum doesn't take
 
 175
 00:10:51,040 --> 00:10:54,430

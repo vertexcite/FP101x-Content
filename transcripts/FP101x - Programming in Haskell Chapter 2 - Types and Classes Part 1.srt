@@ -308,7 +308,7 @@ Basic you will write
 
 71
 00:04:33,930 --> 00:04:37,180
-e has t and in Java
+e as t and in Java
 
 72
 00:04:37,180 --> 00:04:40,310
