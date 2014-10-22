@@ -17,7 +17,7 @@ As developers we often work
 
 5
 00:00:15,059 --> 00:00:20,430
-all-nighters. We sit and hack, we got into
+all-nighters. We sit and hack, we get into
 a flow and we
 
 6
@@ -43,7 +43,7 @@ is shown in there, food
 11
 00:00:38,239 --> 00:00:44,290
 is grouped into categories. For example
-you see bread, rise and pasta
+you see bread, rice and pasta
 
 12
 00:00:44,290 --> 00:00:48,190
@@ -87,7 +87,7 @@ that we code with
 
 21
 00:01:19,530 --> 00:01:23,390
-and how do group these into categories
+and how to group these into categories
 
 22
 00:01:23,390 --> 00:01:27,860
@@ -121,7 +121,7 @@ values that we code with
 
 29
 00:01:50,430 --> 00:01:55,640
-that have similar properties. For example
+that have similar properties. For example,
 in Haskell the type Bool
 
 30
@@ -162,7 +162,7 @@ features
 
 38
 00:02:23,650 --> 00:02:27,700
-like Bottom, so an for now
+like Bottom, so and for now
 
 39
 00:02:27,700 --> 00:02:30,950
@@ -184,7 +184,7 @@ using a function
 
 43
 00:02:46,220 --> 00:02:49,239
-with type: that
+with a type that
 
 44
 00:02:49,239 --> 00:02:54,099
@@ -223,7 +223,7 @@ if you have a certain diet maybe
 
 52
 00:03:20,049 --> 00:03:23,260
-you're not allowed to mix meet
+you're not allowed to mix meat
 
 53
 00:03:23,260 --> 00:03:26,470
@@ -382,7 +382,7 @@ at compile-time and
 
 88
 00:05:34,390 --> 00:05:39,240
-the opinions about differ and whether
+the opinions differ about whether
 you have to have static typing
 
 89
@@ -391,11 +391,11 @@ or dynamic typing or optional typing
 
 90
 00:05:42,330 --> 00:05:46,170
-but for me personally I like
+but for me, personally, I like it.
 
 91
 00:05:46,170 --> 00:05:50,000
-I'm lazy so I like if the compiler
+I'm lazy so I like it if the compiler
 catches the
 
 92
@@ -533,7 +533,7 @@ lists of characters.
 
 120
 00:07:45,810 --> 00:07:51,170
-String, you could say it's not
+String, you could say is not
 really a base type
 
 121
