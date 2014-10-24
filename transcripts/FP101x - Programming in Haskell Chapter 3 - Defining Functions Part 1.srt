@@ -665,6 +665,7 @@ and False and whatever is False.
 150
 00:09:16,570 --> 00:09:20,170
 Let's see if this is true. True
+
 151
 00:09:20,170 --> 00:09:25,260
 and True equals True. True and
