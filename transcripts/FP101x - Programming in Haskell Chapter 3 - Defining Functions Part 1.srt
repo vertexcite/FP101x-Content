@@ -342,7 +342,7 @@ just
 
 77
 00:04:49,840 --> 00:04:53,300
-another alias for false. Now let's
+another alias for True. Now let's
 
 78
 00:04:53,300 --> 00:04:57,280
