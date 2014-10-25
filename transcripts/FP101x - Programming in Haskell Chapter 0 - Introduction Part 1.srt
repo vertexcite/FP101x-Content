@@ -117,12 +117,12 @@ this course.
 
 27
 00:01:38,380 --> 00:01:42,530
-while we're learning to do
-functional programming using haskell so
+While we're learning to do
+functional programming using Haskell so
 
 28
 00:01:42,530 --> 00:01:44,159
-haskell's our matches,
+Haskell's our matches,
 
 29
 00:01:44,159 --> 00:01:47,860
@@ -145,7 +145,7 @@ Don't think that this is about
 
 33
 00:01:58,320 --> 00:02:02,030
-haskell per se, we're going to teach
+Haskell per se, we're going to teach
 functional programming
 
 34
@@ -276,7 +276,7 @@ abstraction.
 
 61
 00:03:46,120 --> 00:03:50,139
-But as I said, haskell is just our
+But as I said, Haskell is just our
 vehicle.
 
 62
@@ -295,7 +295,7 @@ or in Java or in PHP
 
 65
 00:04:02,599 --> 00:04:06,489
-or in javascript, all the ideas that you
+or in JavaScript, all the ideas that you
 will learn here
 
 66
