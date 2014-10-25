@@ -545,7 +545,7 @@ that was quite some years
 
 121
 00:07:52,200 --> 00:07:55,850
-after an the language was finished.
+after the language was finished.
 
 122
 00:07:55,850 --> 00:07:59,020
@@ -642,8 +642,8 @@ about other ways to run Haskell programs
 
 143
 00:09:15,010 --> 00:09:19,250
-and links to other languages that can
-you use to do the exercises,
+and links to other languages that you
+can use to do the exercises,
 
 144
 00:09:19,250 --> 00:09:24,440
