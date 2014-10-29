@@ -39,7 +39,7 @@ If you look at
 9
 00:00:31,510 --> 00:00:37,020
 a traditional imperative language
-such as Java or C sharp,
+such as Java or C#,
 
 10
 00:00:37,020 --> 00:00:41,750
@@ -114,7 +114,7 @@ So what
 
 26
 00:01:38,460 --> 00:01:43,290
-haskell did, it took some of the ideas
+Haskell did, it took some of the ideas
 that mathematicians have
 
 27
@@ -461,8 +461,8 @@ you will recognize that
 
 105
 00:06:28,820 --> 00:06:32,550
-in many many programming language.
-In haskell these are list comprehensions
+in many many programming languages.
+In Haskell these are list comprehensions
 
 106
 00:06:32,550 --> 00:06:34,590
@@ -474,16 +474,16 @@ it also has list comprehensions.
 
 108
 00:06:38,080 --> 00:06:42,750
-Scala has for comprehesions. F sharp
-has comprehension.
+Scala has for comprehensions. F#
+has comprehensions.
 
 109
 00:06:42,750 --> 00:06:46,390
-C sharp and Visual Basic
+C# and Visual Basic
 
 110
 00:06:46,390 --> 00:06:49,550
-have linq comprehensions.
+have LINQ comprehensions.
 
 111
 00:06:49,550 --> 00:06:53,500
@@ -765,7 +765,7 @@ guard
 
 172
 00:10:50,220 --> 00:10:53,600
-in Haskell and if you use a linq
+in Haskell and if you use a LINQ
 
 173
 00:10:53,600 --> 00:10:58,300
