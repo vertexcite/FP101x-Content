@@ -109,8 +109,8 @@ we have two cases.
 
 25
 00:01:32,479 --> 00:01:36,259
-Once when the list is empty and
-once when the list
+One when the list is empty and
+one when the list
 
 26
 00:01:36,259 --> 00:01:39,290

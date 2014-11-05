@@ -45,7 +45,7 @@ other ways for example with the
 
 11
 00:00:32,649 --> 00:00:36,390
-with a String of stars
+with a string of stars
 
 12
 00:00:36,390 --> 00:00:39,989
@@ -53,7 +53,7 @@ in which each star represents a unit.
 
 13
 00:00:39,989 --> 00:00:43,050
-When we talk about church numerals
+When we talk about Church numerals
 
 14
 00:00:43,050 --> 00:00:46,719
@@ -71,11 +71,11 @@ definition.
 
 17
 00:00:53,500 --> 00:00:57,300
-Now let's see how a church numeral works.
+Now let's see how a Church numeral works.
 
 18
 00:00:57,300 --> 00:01:00,699
-The type of the church numeral is this,
+The type of the Church numeral is this,
 that you can see
 
 19
@@ -103,7 +103,7 @@ argument which is this the zero number
 
 24
 00:01:20,439 --> 00:01:23,890
-and it returns the church representation
+and it returns the Church representation
 of this number.
 
 25
@@ -122,7 +122,7 @@ actually
 
 28
 00:01:35,549 --> 00:01:39,460
-write these type of number so that we see
+write this type of number so that we see
 more or less
 
 29
@@ -212,7 +212,7 @@ exactly the same from the first one.
 
 48
 00:02:45,640 --> 00:02:48,880
-These are the representation on the church numerals.
+These are the representation on the Church numerals.
 
 49
 00:02:48,880 --> 00:02:52,049
@@ -253,7 +253,7 @@ some functions that actually instantiate
 
 57
 00:03:13,220 --> 00:03:16,280
-these church numerals to concrete
+these Church numerals to concrete
 
 58
 00:03:16,280 --> 00:03:19,290
@@ -262,12 +262,12 @@ a function
 
 59
 00:03:19,290 --> 00:03:23,040
-church to Int. This function will take as
+Church to Int. This function will take as
 an input argument
 
 60
 00:03:23,040 --> 00:03:27,299
-a church representation of a
+a Church representation of a
 number, therefore a function,
 
 61
@@ -379,7 +379,7 @@ we will have the representation of two.
 85
 00:04:56,630 --> 00:05:01,370
 Up until now we have
-described what a church numeral is
+described what a Church numeral is
 
 86
 00:05:01,370 --> 00:05:03,500
@@ -420,12 +420,12 @@ x' and y' which are
 
 94
 00:05:28,979 --> 00:05:32,620
-church to Int of x and y. So x and y are
-church
+Church to Int of x and y. So x and y are
+Church
 
 95
 00:05:32,620 --> 00:05:36,250
-numerals and their church to Int version is
+numerals and their Church to Int version is
 an integer.
 
 96
@@ -442,12 +442,12 @@ x and y equals
 
 99
 00:05:46,849 --> 00:05:50,300
-church to Int of a function that we will
+Church to Int of a function that we will
 define: add x y
 
 100
 00:05:50,300 --> 00:05:55,310
-defined over church
+defined over Church
 numerals. Okay, to do this
 
 101
@@ -460,21 +460,21 @@ x' + y' just equals
 
 103
 00:06:02,180 --> 00:06:05,970
-the representation from here: church
+the representation from here: Church
 to Int of x
 
 104
 00:06:05,970 --> 00:06:09,740
-plus church to Int of y. 
+plus Church to Int of y. 
 
 105
 00:06:09,740 --> 00:06:13,160
 Now we expand the first definition
-church to Int of x
+Church to Int of x
 
 106
 00:06:13,160 --> 00:06:16,630
-with our implementation of church to Int
+with our implementation of Church to Int
 
 107
 00:06:16,630 --> 00:06:19,849
@@ -519,7 +519,7 @@ representation a y itself?
 116
 00:06:47,770 --> 00:06:53,060
 Okay, we can see that by generalizing
-a little the church to Int function this
+a little the Church to Int function this
 
 117
 00:06:53,060 --> 00:06:53,580
@@ -527,7 +527,7 @@ a little the church to Int function this
 
 118
 00:06:53,580 --> 00:06:57,260
-is really easy. If the church to Int
+is really easy. If the Church to Int
 function will take another parameter z
 
 119
@@ -545,7 +545,7 @@ so we can
 
 122
 00:07:04,880 --> 00:07:08,880
-get this church to Int and move
+get this Church to Int and move
 
 123
 00:07:08,880 --> 00:07:12,870
@@ -559,7 +559,7 @@ What to do now is we expand
 125
 00:07:15,940 --> 00:07:19,460
 Church to Int of y again with the
-same definition of church to Int
+same definition of Church to Int
 
 126
 00:07:19,460 --> 00:07:22,680
@@ -661,7 +661,7 @@ see that this is just an application
 
 147
 00:08:37,500 --> 00:08:42,140
-of the church to Int body of the function
+of the Church to Int body of the function
 that we defined before.
 
 148
@@ -697,7 +697,7 @@ Finally the definition of addition
 
 155
 00:09:04,100 --> 00:09:07,660
-between two church numerals
+between two Church numerals
 
 156
 00:09:07,660 --> 00:09:11,500
@@ -706,7 +706,7 @@ actually
 
 157
 00:09:11,500 --> 00:09:15,540
-a church numeral which will build x
+a Church numeral which will build x
 with
 
 158
@@ -805,7 +805,7 @@ Therefore the multiplication will be
 
 179
 00:10:35,269 --> 00:10:40,050
-defined as a church numeral again which will take a
+defined as a Church numeral again which will take a
 
 180
 00:10:40,050 --> 00:10:41,100
@@ -859,7 +859,7 @@ that was it
 
 191
 00:11:16,310 --> 00:11:19,770
-for church numerals. In the
+for Church numerals. In the
 exercises you will
 
 192
