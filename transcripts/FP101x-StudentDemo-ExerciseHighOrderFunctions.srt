@@ -430,7 +430,7 @@ an integer.
 
 96
 00:05:36,250 --> 00:05:40,450
-What we want to achieve our derivation
+What we want to achieve in our derivation
 
 97
 00:05:40,450 --> 00:05:43,810
@@ -513,7 +513,7 @@ So why don't we just start building x
 
 115
 00:06:43,200 --> 00:06:47,770
-in stead of from zero from the integer
+instead of from zero from the integer
 representation a y itself?
 
 116
@@ -726,7 +726,7 @@ now to
 
 161
 00:09:26,750 --> 00:09:32,589
-find the multiplication. When we think
+define the multiplication. When we think
 about multiplying two numbers,
 
 162
