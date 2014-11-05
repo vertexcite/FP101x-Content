@@ -477,7 +477,7 @@ p of x to the list xs
 
 108
 00:06:37,150 --> 00:06:41,960
-and then check weather every one of
+and then check whether every one of
 those is true.
 
 109
