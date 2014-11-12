@@ -250,11 +250,11 @@ We first get the character.
 
 57
 00:03:31,760 --> 00:03:35,890
-If that character is a new line
+If that character is a newline
 
 58
 00:03:35,890 --> 00:03:39,950
-then we echo the new line
+then we echo the newline
 
 59
 00:03:39,950 --> 00:03:43,860
@@ -300,7 +300,7 @@ you how many characters there are.
 
 68
 00:04:19,840 --> 00:04:23,169
-The action getChar here
+The action getCh here
 
 69
 00:04:23,169 --> 00:04:26,289
@@ -503,7 +503,7 @@ turns
 114
 00:07:14,780 --> 00:07:18,780
 to do this and you don't want this
-to stackoverflow.
+to stack overflow.
 
 115
 00:07:18,780 --> 00:07:23,300
