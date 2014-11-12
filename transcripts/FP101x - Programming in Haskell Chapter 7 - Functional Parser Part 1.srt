@@ -457,7 +457,7 @@ But I think what you will discover
 
 103
 00:06:35,360 --> 00:06:39,400
-is that it's not more elegant then using
+is that it's not more elegant than using
 lists.
 
 104
@@ -653,7 +653,7 @@ And that has everything to do
 
 146
 00:09:14,010 --> 00:09:17,130
-with the M word. Ohhh, the M word..
+with the M word. Ohhh, the M word...
 And now my
 
 147
