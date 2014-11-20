@@ -4,8 +4,8 @@ Welcome everybody to
 
 2
 00:00:03,260 --> 00:00:06,440
-another episode of functional
-programming 101
+another episode of Functional
+Programming 101
 
 3
 00:00:06,440 --> 00:00:10,410

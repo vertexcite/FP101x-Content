@@ -111,7 +111,7 @@ pairs of expressions and their
 
 26
 00:01:30,350 --> 00:01:34,509
-values. This the expression
+values. This is the expression
 
 27
 00:01:34,509 --> 00:01:39,729
@@ -246,11 +246,11 @@ that will do the same thing that will check
 
 57
 00:03:23,780 --> 00:03:27,350
-weather the result are valid. Here is
+whether the result are valid. Here is
 
 58
 00:03:27,350 --> 00:03:31,200
-combine, its exactly the same
+combine, it's exactly the same
 
 59
 00:03:31,200 --> 00:03:35,220
@@ -322,7 +322,7 @@ it's about ten times faster so it's now
 
 74
 00:04:30,220 --> 00:04:33,280
-four hundreds of a second
+four hundredths of a second
 
 75
 00:04:33,280 --> 00:04:38,840
@@ -354,7 +354,7 @@ generating invalid expressions
 
 82
 00:05:01,210 --> 00:05:05,320
-because we we're generating the
+because we were generating the
 expressions with their results such that
 
 83
