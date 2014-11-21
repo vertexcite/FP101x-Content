@@ -168,7 +168,7 @@ but it is because
 38
 00:02:11,960 --> 00:02:17,720
 in your company they're not using
-Haskell but say at PHP.
+Haskell but say PHP.
 
 39
 00:02:17,720 --> 00:02:21,710
@@ -237,7 +237,7 @@ Google for "sudoku solver in Haskell" or
 
 54
 00:03:13,650 --> 00:03:17,250
-if you read any of Richard birch
+if you read any of Richard Bird's
 papers, you will
 
 55
@@ -272,7 +272,7 @@ division
 
 62
 00:03:43,920 --> 00:03:47,320
-we need to create an expression who's
+we need to create an expression whose
 
 63
 00:03:47,320 --> 00:03:51,400
@@ -310,7 +310,7 @@ is fun in a quiz show
 70
 00:04:13,940 --> 00:04:18,400
 and some people are really good at it,
-can do it fast other people
+can do it fast, other people
 
 71
 00:04:18,400 --> 00:04:22,410
@@ -506,7 +506,7 @@ subtract them
 
 115
 00:06:59,499 --> 00:07:03,059
-et cetera. The resean we're using
+et cetera. The reason we're using
 
 116
 00:07:03,059 --> 00:07:06,759
@@ -597,7 +597,7 @@ second number
 135
 00:08:16,499 --> 00:08:20,389
 because otherwise the result would be
-negative and that there's not a lot.
+negative and that's not allowed.
 
 136
 00:08:20,389 --> 00:08:23,759
@@ -631,13 +631,13 @@ of expressions, just as we have seen
 
 143
 00:08:43,510 --> 00:08:48,510
-before. We have an slightly different
-instead of having like
+before. We have a slightly different...
+instead of having
 
 144
 00:08:48,510 --> 00:08:53,140
-have separate operate as a separate
-constructor for each operator we have
+a separate constructor for each
+operator we have...
 
 145
 00:08:53,140 --> 00:08:57,290
@@ -680,7 +680,7 @@ from our parsers. Our parser also
 
 154
 00:09:29,529 --> 00:09:32,630
-returned either and empty lest when they
+returned either an empty lest when they
 failed,
 
 155
@@ -690,7 +690,7 @@ when they succeeded.
 
 156
 00:09:36,290 --> 00:09:39,770
-We don't use the maybe type,
+We don't use the Maybe type,
 
 157
 00:09:39,770 --> 00:09:43,620
@@ -786,7 +786,7 @@ for only valid sub-expressions.
 
 178
 00:11:00,310 --> 00:11:04,690
-Now lets continue to
+Now let's continue to
 formalize the problem. There's a
 
 179
@@ -804,7 +804,7 @@ but you will get them in your exercises.
 
 182
 00:11:16,160 --> 00:11:19,270
-So hahaha
+So, hahaha,
 
 183
 00:11:19,270 --> 00:11:22,760
@@ -818,7 +818,7 @@ That's the advantage of teaching a course.
 185
 00:11:26,340 --> 00:11:30,230
 The first function here that we're
-going to use choices.
+going to use is choices.
 
 186
 00:11:30,230 --> 00:11:34,210
@@ -917,7 +917,7 @@ singleton list.
 
 207
 00:12:49,440 --> 00:12:52,800
-If I have the publication of whatever
+If I have the application of whatever
 operator
 
 208
@@ -1033,7 +1033,7 @@ you will see that this is a very nice
 233
 00:14:21,870 --> 00:14:27,240
 direct translation of that definition.
-Now lets
+Now let's
 
 234
 00:14:27,240 --> 00:14:31,570
@@ -1121,7 +1121,7 @@ which is nonsense. Again
 253
 00:15:37,640 --> 00:15:41,250
 this is a function that you will have to
-write in the exercise.
+write in the exercises.
 
 254
 00:15:41,250 --> 00:15:44,350
@@ -1354,7 +1354,7 @@ what we will do is we will combine
 305
 00:19:08,380 --> 00:19:12,580
 the generation function with the
-evaluation function so we will fuse the
+evaluation function so we will fuse these
 
 306
 00:19:12,580 --> 00:19:13,250
