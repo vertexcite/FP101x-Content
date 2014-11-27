@@ -1,0 +1,159 @@
+1
+00:00:00,010 --> 00:00:04,529
+You have always wanted to learn about
+category theory or as mathematicians call it
+
+2
+00:00:04,529 --> 00:00:08,690
+generalized abstract nonsense. Now what
+is category theory?
+
+3
+00:00:08,690 --> 00:00:11,910
+Category theory is the mathematicians way
+
+4
+00:00:11,910 --> 00:00:17,470
+to do object oriented programming or
+design patterns. A category is simply
+
+5
+00:00:17,470 --> 00:00:23,170
+built from objects and morphisms and the
+morphisms have to satisfy certain laws.
+
+6
+00:00:23,170 --> 00:00:26,880
+In particular when you have a morphism
+from a to b
+
+7
+00:00:26,880 --> 00:00:30,420
+and another morphism from b to c, you
+have to have a morphism
+
+8
+00:00:30,420 --> 00:00:33,460
+directly from a to c as well.
+
+9
+00:00:33,460 --> 00:00:36,989
+Let's take a step back and take this
+category
+
+10
+00:00:36,989 --> 00:00:40,180
+and make categories as objects
+
+11
+00:00:40,180 --> 00:00:43,309
+so that we get this picture. Here we
+have the
+
+12
+00:00:43,309 --> 00:00:48,120
+categories now as objects and we need to
+have a notion of morphism.
+
+13
+00:00:48,120 --> 00:00:52,949
+That morphism is called a functor and
+the category is called
+
+14
+00:00:52,949 --> 00:00:56,510
+the category of small categories. If we
+look
+
+15
+00:00:56,510 --> 00:00:59,930
+at the rules for functors, what we
+recognize
+
+16
+00:00:59,930 --> 00:01:03,710
+is that the functor when applied to object
+is really
+
+17
+00:01:03,710 --> 00:01:08,000
+a generic type and when it is applied
+to morphisms
+
+18
+00:01:08,000 --> 00:01:11,650
+we see that it's the familiar map
+function. We can take
+
+19
+00:01:11,650 --> 00:01:15,670
+yet another step back and look at
+functors as objects.
+
+20
+00:01:15,670 --> 00:01:18,840
+And when we use functors as objects, we
+need
+
+21
+00:01:18,840 --> 00:01:23,159
+again a notion of morphism and those
+morphisms are called
+
+22
+00:01:23,159 --> 00:01:27,479
+natural transformations. And if we look
+at that with our developer glasses
+
+23
+00:01:27,479 --> 00:01:31,200
+we see that natural transformations are
+nothing more
+
+24
+00:01:31,200 --> 00:01:34,380
+than generic functions. And this category
+by the way
+
+25
+00:01:34,380 --> 00:01:37,880
+is called the functor category. Again
+
+26
+00:01:37,880 --> 00:01:41,479
+the morphisms in the functor category,
+these natural transformations
+
+27
+00:01:41,479 --> 00:01:44,759
+have to satisfy particular laws and
+
+28
+00:01:44,759 --> 00:01:48,829
+the usual way to write those is with a
+commuting diagram like this.
+
+29
+00:01:48,829 --> 00:01:54,799
+So if you go from the top left to the
+bottom right, you can go in two ways
+
+30
+00:01:54,799 --> 00:01:59,369
+and the law says that it doesn't matter
+which direction you take.
+
+31
+00:01:59,369 --> 00:02:03,049
+Well, I know which direction you should
+take.
+
+32
+00:02:03,049 --> 00:02:06,200
+You should come and do this MOOC.
+See you soon
+
+33
+00:02:06,200 --> 00:02:06,850
+in cyberspace!
+
