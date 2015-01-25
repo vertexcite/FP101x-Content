@@ -162,7 +162,7 @@ size into a virtual method of
 37
 00:02:15,959 --> 00:02:19,540
 the expression superclass and then
-overwrite
+override
 
 38
 00:02:19,540 --> 00:02:23,439
