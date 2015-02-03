@@ -1,0 +1,898 @@
+1
+00:00:01,810 --> 00:00:03,050
+Bem-vindos de volta
+
+2
+00:00:03,050 --> 00:00:06,930
+ao FP101x.
+
+3
+00:00:06,930 --> 00:00:09,990
+
+
+4
+00:00:09,990 --> 00:00:13,070
+Vamos começar
+
+5
+00:00:13,070 --> 00:00:16,359
+contando um pouco da história
+da programação funcional.
+
+
+6
+00:00:16,359 --> 00:00:19,689
+Quando olhamos para linguagens como 
+Java ou
+
+7
+00:00:19,689 --> 00:00:25,359
+JavaScript, é fácil de esquecer que
+os conceitos de programação funcional
+
+8
+00:00:25,359 --> 00:00:28,779
+são na verdade muito antigos e 
+eles foram 
+
+9
+00:00:28,779 --> 00:00:32,250
+inventados antes da maioria de nós
+
+10
+00:00:32,250 --> 00:00:35,540
+ter nascido.
+
+11
+00:00:35,540 --> 00:00:39,870
+Aqui vemos Alonzo Church.
+Alonzo Church
+
+12
+00:00:39,870 --> 00:00:44,040
+na década de 30, desenvolveu o
+cálculo lambda.
+
+13
+00:00:44,040 --> 00:00:47,960
+Ele desenvolveu o cálculo lambda
+como uma base
+
+14
+00:00:47,960 --> 00:00:51,930
+para a matemática. Ele queria encontrar
+uma forma
+
+15
+00:00:51,930 --> 00:00:55,100
+para descrever os fundamentos
+da matemática
+
+16
+00:00:55,100 --> 00:00:58,140
+e é bastante notável que seu trabalho
+
+17
+00:00:58,140 --> 00:01:02,399
+na década de 30 acabou se tornando
+
+18
+00:01:02,399 --> 00:01:06,619
+a base para a maioria das nossas 
+linguagens de programação de hoje.
+
+19
+00:01:06,619 --> 00:01:10,360
+Se você olhar para o Javascript, 
+a linguagem que alimenta a web -
+
+20
+00:01:10,360 --> 00:01:14,369
+e todos nó sabemos que em Javascript
+funções
+
+21
+00:01:14,369 --> 00:01:17,670
+são muito importantes - alguém
+poderia falar
+
+22
+00:01:17,670 --> 00:01:20,780
+que a web é alimentada pelo
+cálculo lambda.
+
+23
+00:01:20,780 --> 00:01:24,250
+Agora Java 8 
+
+24
+00:01:24,250 --> 00:01:28,290
+tem expressões lambda e C++
+tem
+
+25
+00:01:28,290 --> 00:01:32,619
+expressões lambda... Não há
+linguagem de programação em uso hoje
+
+26
+00:01:32,619 --> 00:01:35,970
+que no suporte este conceito que
+
+27
+00:01:35,970 --> 00:01:41,720
+Alonzo Church inventou na década de 30.
+Se formos
+
+28
+00:01:41,720 --> 00:01:44,970
+um pouco mais para os
+
+29
+00:01:44,970 --> 00:01:48,439
+tempos atuais, na década de 50, John
+McCarthy
+
+30
+00:01:48,439 --> 00:01:53,009
+desenvolveu o Lisp, que não só foi 
+uma das primeiras
+
+31
+00:01:53,009 --> 00:01:57,979
+linguagens de programação já projetadas, 
+mas também foi a primeira
+
+32
+00:01:57,979 --> 00:02:02,070
+linguagem de programação funcional.
+John McCarthy
+
+33
+00:02:02,070 --> 00:02:06,659
+foi influênciado pelo cálculo lambda,
+mas ele também
+
+34
+00:02:06,659 --> 00:02:10,629
+tinha atribuições imperativas
+
+35
+00:02:10,629 --> 00:02:12,290
+em Lisp.
+
+36
+00:02:12,290 --> 00:02:15,670
+De certa forma você pode falar que
+Lisp foi uma das
+
+
+37
+00:02:15,670 --> 00:02:20,019
+primeiras linguagens de programação 
+modernas que combina
+
+38
+00:02:20,019 --> 00:02:23,310
+as idéias do cálculo lambda puro
+
+39
+00:02:23,310 --> 00:02:27,469
+com algumas das características imperativas das
+
+40
+00:02:27,469 --> 00:02:33,040
+linguagens de programação. 
+Em 1960,
+
+41
+00:02:33,040 --> 00:02:36,700
+Peter Landin desenvolveu ISWIM.
+
+42
+00:02:36,700 --> 00:02:40,150
+ISWIM significa "If You See What I Mean"
+
+43
+00:02:40,150 --> 00:02:44,200
+e esta foi a primeira linguagem
+funcional pura
+
+44
+00:02:44,200 --> 00:02:48,049
+baseada no cálculo lambda, que sigfinica
+
+45
+00:02:48,049 --> 00:02:51,930
+que não havia atribuições - apenas
+funções puras.
+
+46
+00:02:51,930 --> 00:02:57,760
+Na década de 70, John Backus
+
+47
+00:02:57,760 --> 00:03:01,340
+desenvolveu a FP, que significa
+
+48
+00:03:01,340 --> 00:03:04,349
+"Functional Programming". John Backus
+
+49
+00:03:04,349 --> 00:03:07,900
+passou a ser um dos designers do Fortran,
+
+50
+00:03:07,900 --> 00:03:11,629
+que foi concebida mais ou menos na mesma
+época
+
+51
+00:03:11,629 --> 00:03:14,970
+que a Lisp e era uma linguagem 
+muito imperativa.
+
+52
+00:03:14,970 --> 00:03:19,840
+Ele desenvolveu essa nova linguagem
+nos anos 70
+
+53
+00:03:19,840 --> 00:03:22,900
+que enfatiza higher-order functions	
+
+54
+00:03:22,900 --> 00:03:26,829
+e, espeficicamente, raciocínios sobre
+programas.
+
+55
+00:03:26,829 --> 00:03:30,769
+Você quer ser capaz de raciocinar sobre
+sobre a exatidão
+
+56
+00:03:30,769 --> 00:03:33,989
+do seu código e FP é
+
+57
+00:03:33,989 --> 00:03:38,510
+focada nisso. 
+Também na década de 70,
+
+58
+00:03:38,510 --> 00:03:41,959
+Robin Milner, que você vê aqui,
+
+59
+00:03:41,959 --> 00:03:45,019
+desenvolveu a ML.
+
+60
+00:03:45,019 --> 00:03:49,440
+ML também era uma linguagem hibrída  que
+
+61
+00:03:49,440 --> 00:03:53,139
+pegou idéias da programação funcional
+pura, mas também
+
+62
+00:03:53,139 --> 00:03:56,239
+permite atríbuições imperativas.
+
+63
+00:03:56,239 --> 00:03:59,729
+Um detalhe interessante sobre ML é que
+
+64
+00:03:59,729 --> 00:04:02,989
+ML foi originalmente desenvolvida
+como uma linguagem de script.
+
+65
+00:04:02,989 --> 00:04:07,620
+Foi desenvolvida como uma linguagem de script
+para permitir pessoas escreverem provas.
+
+66
+00:04:07,620 --> 00:04:12,099
+Quando você está escrevendo provas
+matemáticas, há muitos clichês,
+
+67
+00:04:12,099 --> 00:04:15,939
+muitos passos que você tem que fazer
+e a fim de automatizar isso,
+
+68
+00:04:15,939 --> 00:04:20,359
+Milner e seus colegas de trabalho
+desenvolveram ML
+
+69
+00:04:20,359 --> 00:04:25,030
+tal que você poderia escrever scripts que
+fariam todos estes passos
+
+70
+00:04:25,030 --> 00:04:28,850
+tedioso por você.
+Uma das
+
+71
+00:04:28,850 --> 00:04:33,940
+vantagens da ML - tenha em mente
+que isso foi
+
+72
+00:04:33,940 --> 00:04:37,530
+na década de 70 - era a inferência de tipos.
+
+73
+00:04:37,530 --> 00:04:43,000
+Então, vocẽ poderia escrever uma função e
+o compilador inferiria o tipo para você.
+
+74
+00:04:43,000 --> 00:04:46,930
+ML também tinha
+
+75
+00:04:46,930 --> 00:04:50,430
+tipos polimórficos, ou como os chamamos
+
+76
+00:04:50,430 --> 00:04:55,490
+hoje principalmente, tipos genéricos, onde você
+poderia ter
+
+77
+00:04:55,490 --> 00:05:00,630
+a uma lista de T e então instanciar T
+com Int ou String ou
+
+
+78
+00:05:00,630 --> 00:05:07,100
+talvez mesmo uma outra lista.
+Estes conceitos de inferência de tipo
+
+79
+00:05:07,100 --> 00:05:11,240
+e genéricos são na verdade bem velhos
+e isso
+
+80
+00:05:11,240 --> 00:05:14,360
+levou muitas e muitas décadas para
+estas idéias
+
+81
+00:05:14,360 --> 00:05:17,490
+sairem da acadêmia
+
+82
+00:05:17,490 --> 00:05:22,660
+para o mainstream.
+
+83
+00:05:22,660 --> 00:05:25,950
+Nas décadas de 70 e 80,
+David Turner
+
+84
+00:05:25,950 --> 00:05:29,590
+desenvolveu algumas linguagens,
+começando com SASL,
+
+85
+00:05:29,590 --> 00:05:33,500
+então KRC e por fim culminando
+
+86
+00:05:33,500 --> 00:05:37,730
+na Miranda. Estas eram todas
+linguagens funcionais lazy
+
+87
+00:05:37,730 --> 00:05:41,210
+e nós iremos ver a diferença entre
+lazy
+
+88
+00:05:41,210 --> 00:05:44,390
+e linguagens funcionais strict mais
+tarde no curso.
+
+89
+00:05:44,390 --> 00:05:49,660
+David Turner foi extremamente
+influente pois
+
+90
+00:05:49,660 --> 00:05:54,290
+Haskell, a linguagem que iremos
+usar neste curso,
+
+91
+00:05:54,290 --> 00:05:57,560
+é também uma linguagem lazy e é
+construida
+
+92
+00:05:57,560 --> 00:06:01,730
+em muito do trabalho feito por
+David Turner
+
+93
+00:06:01,730 --> 00:06:07,220
+na Miranda, SASL and KRC. 
+Minha primeira linguagem funcional,
+
+94
+00:06:07,220 --> 00:06:10,470
+quando comecei a estudar ciências
+da computação
+
+95
+00:06:10,470 --> 00:06:14,380
+na década de 80, foi SASL, então
+eu ainda
+
+96
+00:06:14,380 --> 00:06:17,440
+tenho um lugar especial no meu coração
+para a SASL
+
+97
+00:06:17,440 --> 00:06:23,230
+e nós iremos definitivamente dar uma
+olhada
+
+98
+00:06:23,230 --> 00:06:27,690
+nisso mais tarde em uma sessão de SASL,
+
+99
+00:06:27,690 --> 00:06:31,470
+pois SASL de alguma forma é
+a mãe
+
+100
+00:06:31,470 --> 00:06:34,910
+do Haskell.
+
+101
+00:06:34,910 --> 00:06:37,980
+Falando de Haskell, por volta
+
+102
+00:06:37,980 --> 00:06:41,000
+de 1987,
+
+103
+00:06:41,000 --> 00:06:46,870
+um grupo de pesquisadores
+de linguagens de programação e
+
+104
+00:06:46,870 --> 00:06:47,810
+linguagens funcionais
+
+105
+00:06:47,810 --> 00:06:52,500
+iniciou o desenvolvimento do
+Haskell e a idéia era de
+
+106
+00:06:52,500 --> 00:06:56,520
+criar uma linguagem padrão que
+as pessoas poderiam usar para experimentos.
+
+107
+00:06:56,520 --> 00:07:01,380
+Porque se você quiser experimentos 
+com, digamos, um novo sistema de tipos,
+
+108
+00:07:01,380 --> 00:07:04,810
+é muito trabalho construir toda uma
+infraestrutura
+
+109
+00:07:04,810 --> 00:07:09,140
+da linguagem, do parser, etc,
+se tudo o que você quer fazer
+
+110
+00:07:09,140 --> 00:07:12,820
+é estudar esse novo sitema de tipos.
+
+111
+00:07:12,820 --> 00:07:15,950
+Haskell tem sido chamado as vezes
+
+112
+00:07:15,950 --> 00:07:19,420
+de placa de Petri por pesquisadores
+de linguagem de programação
+
+113
+00:07:19,420 --> 00:07:24,100
+e tem servido a esse objetivo e
+tem vários artigos tem sido escritos
+
+114
+00:07:24,100 --> 00:07:27,360
+onde Haskell é usado como
+
+115
+00:07:27,360 --> 00:07:32,540
+substrato para experimentos,
+mas Haskell também tem tido
+
+116
+00:07:32,540 --> 00:07:34,900
+bastante sucesso como linguagem.
+
+117
+00:07:34,900 --> 00:07:38,250
+Haskell será também
+
+118
+00:07:38,250 --> 00:07:44,430
+a linguagem que usaremos neste
+curso. Em 2003,
+
+119
+00:07:44,430 --> 00:07:48,060
+isto é bem interessante,
+
+120
+00:07:48,060 --> 00:07:52,200
+o relatório Haskell 98 foi publicado,
+isso foi alguns anos
+
+121
+00:07:52,200 --> 00:07:55,850
+depois da linguagem ter sido
+finalizada.
+
+122
+00:07:55,850 --> 00:07:59,020
+O objetivo do Haskell 98
+
+123
+00:07:59,020 --> 00:08:02,080
+foi definir uma versão estável da
+linguagem.
+
+124
+00:08:02,080 --> 00:08:05,120
+Haskell sendo este veículo de pesquisa
+
+125
+00:08:05,120 --> 00:08:09,230
+tem tido muitas extensões a fim de
+fazer a linguagem
+
+126
+00:08:09,230 --> 00:08:13,420
+ser usada no mainstrem,
+
+127
+00:08:13,420 --> 00:08:17,670
+a idéia era que nós precisavamos de
+uma versão estável da linguagem
+
+128
+00:08:17,670 --> 00:08:21,020
+que apenas tivessem características
+que fossem
+
+129
+00:08:21,020 --> 00:08:25,650
+consistentes e terminadas, tal que
+as pessoas pudessem confiar nela.
+
+130
+00:08:25,650 --> 00:08:28,990
+Nesse meio tempo, Haskell tinha se 
+mantido
+
+131
+00:08:28,990 --> 00:08:33,110
+em evolução, mas neste curso
+iremos aderir
+
+132
+00:08:33,110 --> 00:08:36,860
+ao Haskell 98.
+
+133
+00:08:36,860 --> 00:08:40,979
+Se você está usando o GHC, como você irá ver 
+na proxima aula, o GHC
+
+134
+00:08:40,979 --> 00:08:44,400
+tem muitas extensões, mas esse
+
+135
+00:08:44,400 --> 00:08:45,390
+é
+
+136
+00:08:45,390 --> 00:08:49,650
+um tópico para um curso futuro.
+
+137
+00:08:49,650 --> 00:08:52,880
+Vamos ficar apenas com Haskell 98.
+
+138
+00:08:52,880 --> 00:08:56,150
+Se olharmos
+
+139
+00:08:56,150 --> 00:09:01,600
+o status do Haskell hoje, há
+a plataforma Haskell,
+
+140
+00:09:01,600 --> 00:09:07,170
+que você pode baixar, o website do
+curso terá todas as informações
+
+141
+00:09:07,170 --> 00:09:12,010
+sobre isso. O website do curso
+também terá informações
+
+142
+00:09:12,010 --> 00:09:15,010
+sobre outras formas de executar
+programas em Haskell
+
+143
+00:09:15,010 --> 00:09:19,250
+e links para outras linguagens que
+você pode usar para fazer os exercícios,
+
+144
+00:09:19,250 --> 00:09:24,440
+mas a plataforma Haskell fornece uma
+implementação da linguagem Haskell
+
+145
+00:09:24,440 --> 00:09:29,620
+mais as bibliotecas padrão para a maioria
+das plataformas: Windows, Mac
+
+146
+00:09:29,620 --> 00:09:33,800
+e Linux.
+
+147
+00:09:33,800 --> 00:09:38,480
+Este plataforma Haskell é utilizada em
+toda a indústria
+
+148
+00:09:38,480 --> 00:09:41,710
+para entregar software real
+
+149
+00:09:41,710 --> 00:09:44,960
+e também, como veremos,
+
+150
+00:09:44,960 --> 00:09:48,750
+você pode ver a influência de Haskell
+em outras linguagens.
+
+151
+00:09:48,750 --> 00:09:52,040
+Vamos terminar por aqui
+
+152
+00:09:52,040 --> 00:09:55,550
+com um pequeno programa em Haskell
+
+153
+00:09:55,550 --> 00:09:58,740
+para mostrar a concisão do Haskell.
+
+154
+00:09:58,740 --> 00:10:02,459
+Este propgrama aqui,
+
+155
+00:10:02,459 --> 00:10:05,560
+o que ele faz
+
+156
+00:10:05,560 --> 00:10:09,050
+é: ele ordena uma lista usando o algoritmo
+quicksort.
+
+157
+00:10:09,050 --> 00:10:13,709
+Aqui está o código; 
+Here's the code; vamos passar por ele e
+
+158
+00:10:13,709 --> 00:10:17,750
+depois de algumas aulas você será capaz
+de escrever código como este sozinho.
+
+159
+00:10:17,750 --> 00:10:21,850
+A primeira coisa quando ordenamos uma lista
+
+160
+00:10:21,850 --> 00:10:26,010
+é: quando temos uma lista vazia -
+este é o primeiro caso aqui -
+
+161
+00:10:26,010 --> 00:10:29,720
+queremos ordenar a lista vazia e
+
+162
+00:10:29,720 --> 00:10:33,310
+o resultado é uma lista vazia. A
+lista vazia já está ordenada.
+
+163
+00:10:33,310 --> 00:10:37,140
+Agora o próximo passo aqui diz que se
+temos uma lista
+
+164
+00:10:37,140 --> 00:10:40,140
+xs que começa com o valor x,
+
+165
+00:10:40,140 --> 00:10:43,150
+o que fazemos é: primeiro
+what we do is: we first
+
+166
+00:10:43,150 --> 00:10:47,410
+pegamos todos os elementos a que são menores
+do que x,
+
+167
+00:10:47,410 --> 00:10:51,730
+colocamos eles na lista chamada ys e então
+pegamos
+
+168
+00:10:51,730 --> 00:10:57,040
+todos os valores b que são maiores do que x,
+colocamos eles na lista
+
+169
+00:10:57,040 --> 00:10:58,280
+zs
+
+170
+00:10:58,280 --> 00:11:01,320
+e então o que fazemos é ordenar
+recursivamente
+
+171
+00:11:01,320 --> 00:11:05,310
+ys com a função f,
+
+172
+00:11:05,310 --> 00:11:08,330
+então todos os vlaores que são menores
+do que x
+
+173
+00:11:08,330 --> 00:11:13,140
+serão ordenados. Então ordenamos todos
+os valores que são maiores do que x
+
+174
+00:11:13,140 --> 00:11:16,290
+(que era zs) e então concatenamos
+
+175
+00:11:16,290 --> 00:11:19,880
+estas duas listas com x no meio.
+
+176
+00:11:19,880 --> 00:11:23,060
+Você pode facilmente ver que
+
+177
+00:11:23,060 --> 00:11:26,140
+o efeito desta chamada 
+
+178
+00:11:26,140 --> 00:11:30,430
+recursiva é que agora nós temos uma lista
+ordenada.
+
+179
+00:11:30,430 --> 00:11:33,620
+Aviso: Este programa
+
+180
+00:11:33,620 --> 00:11:37,260
+apenas mostra a estrutura algorítmica
+
+181
+00:11:37,260 --> 00:11:41,160
+do quicksort - mostra a decomposição
+recursiva
+
+182
+00:11:41,160 --> 00:11:44,930
+da ordenação. O quicksort real, em
+uma linguagem
+
+183
+00:11:44,930 --> 00:11:48,370
+imperativa, não cria novas listas 
+como aqui
+
+184
+00:11:48,370 --> 00:11:54,260
+(estas 2 listas), mas pega uma lista única
+e modifica os valores em vigor,
+
+185
+00:11:54,260 --> 00:11:58,490
+tal que use apenas o espaço
+desta lista única.
+
+186
+00:11:58,490 --> 00:12:01,910
+Mas ainda assim, se você quer
+
+187
+00:12:01,910 --> 00:12:04,940
+estudar a estrutura algoritmica do 
+quicksort,
+
+188
+00:12:04,940 --> 00:12:08,470
+este programa é bastante elegante.
+
+189
+00:12:08,470 --> 00:12:12,290
+Claro, podemos começar com este
+programa e então podemos querer
+
+190
+00:12:12,290 --> 00:12:13,220
+implementar isso
+
+191
+00:12:13,220 --> 00:12:16,860
+de uma forma mais eficiente
+através da mutação de estado.
+
+192
+00:12:16,860 --> 00:12:20,620
+Muito obrigado!
+
+193
+00:12:20,620 --> 00:12:24,600
+Este foi o final a primeira aula.
+Happy hacking
+
+194
+00:12:24,600 --> 00:12:27,630
+com os exercícios no website
+
+195
+00:12:27,630 --> 00:12:30,480
+e vejo você na próxima semana
+para a aula 2.

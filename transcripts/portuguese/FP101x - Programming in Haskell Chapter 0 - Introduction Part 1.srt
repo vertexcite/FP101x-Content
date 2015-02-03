@@ -1,0 +1,631 @@
+1
+00:00:01,520 --> 00:00:03,560
+Bem-vindos, ao 
+
+2
+00:00:03,560 --> 00:00:08,849
+MOOC de programação funcional FP101x.
+Eu estou realmente feliz que nós podemos fazer
+
+3
+00:00:08,849 --> 00:00:12,820
+este MOOC com exercícios e 
+tudo mais.
+
+4
+00:00:12,820 --> 00:00:17,820
+Vamos começar
+
+5
+00:00:17,820 --> 00:00:23,480
+imediatamente. Uma coisa que eu queria
+dizer a vocês antes de continuarmos
+
+6
+00:00:23,480 --> 00:00:28,160
+é que este é um MOOC sobre programação
+funcional, que é o que o título
+
+7
+00:00:28,160 --> 00:00:33,090
+"FP101 functional programming" diz. Este não
+é um curso de Haskell, estamos usando
+
+8
+00:00:33,090 --> 00:00:33,920
+Haskell
+
+9
+00:00:33,920 --> 00:00:39,379
+como uma linguagem funcional mas não
+estamos aprendendo a programar Haskell em si.
+
+10
+00:00:39,379 --> 00:00:42,469
+Deixe-me contar a vocês um pouco
+de uma história.
+
+11
+00:00:42,469 --> 00:00:46,000
+Eu viajo muito, vou a conferências,
+
+12
+00:00:46,000 --> 00:00:49,200
+dando cursos etc.
+
+13
+00:00:49,200 --> 00:00:52,989
+e durante estas viagens eu tenho
+tempo suficiente para assistir TV.
+
+14
+00:00:52,989 --> 00:00:57,520
+Certa noite eu estava trocando de canais 
+aleatoriamente
+
+15
+00:00:57,520 --> 00:01:00,770
+e havia um daqueles programas 
+de sobrevivência.
+
+16
+00:01:00,770 --> 00:01:03,960
+no qual um homem estava tentando
+
+17
+00:01:03,960 --> 00:01:07,340
+montar um acampamento a noite e
+tentando fazer uma fogueira
+
+18
+00:01:07,340 --> 00:01:10,939
+mas seus fósforos estavam molhados.
+
+19
+00:01:10,939 --> 00:01:14,030
+Ele poderia ter entrado em pânico e falado:
+
+20
+00:01:14,030 --> 00:01:17,250
+Meus fósforos estão molhados eu não 
+consigo fazer uma fogueira.
+
+21
+00:01:17,250 --> 00:01:20,680
+O que ele fez em vez disso foi pegar
+o seu telefone celular
+
+22
+00:01:20,680 --> 00:01:23,840
+e sua faca e ele
+
+23
+00:01:23,840 --> 00:01:27,869
+removeu a bateria de seu celular,
+abriu a bateria
+
+24
+00:01:27,869 --> 00:01:30,869
+e então a bateria começou a entrar 
+em combustão.
+
+25
+00:01:30,869 --> 00:01:35,220
+Foi isso que ele usou para fazer uma fogueira.
+E esta é a mesma
+
+26
+00:01:35,220 --> 00:01:38,380
+atitude que eu quero ensinar a você
+neste curso.
+
+27
+00:01:38,380 --> 00:01:42,530
+Enquanto estamos aprendendo a programar
+funcionalmente com Haskell, então
+	
+28
+00:01:42,530 --> 00:01:44,159
+Haskell será nossos fósforos,
+
+29
+00:01:44,159 --> 00:01:47,860
+quando no trabalho você não tiver 
+fósforos disponíveis
+
+30
+00:01:47,860 --> 00:01:52,049
+você ainda pode programar funcionalmente.
+As vezes você tem que esmagar seu 
+
+31
+00:01:52,049 --> 00:01:52,950
+telefone celular
+
+32
+00:01:52,950 --> 00:01:58,320
+e abrir sua bateria para começar uma fogueira.
+Não pense que este curso e sobre 
+
+33
+00:01:58,320 --> 00:02:02,030
+Haskell, por si só, nós vamos ensinar
+programação funcional
+
+34
+00:02:02,030 --> 00:02:06,299
+usando Haskell. 
+Certo, vamos
+
+35
+00:02:06,299 --> 00:02:09,869
+começar então.
+
+36
+00:02:09,869 --> 00:02:13,090
+Qual é o problema que estamos tentando
+resolver? O problema
+
+37
+00:02:13,090 --> 00:02:17,000
+é chamado de “crise do software”.
+Todos nós sabemos
+
+38
+00:02:17,000 --> 00:02:21,090
+como desenvolvedores que escrever código é
+muito difícil.
+
+39
+00:02:21,090 --> 00:02:24,180
+Estamos escrevendo programas enormes e
+
+40
+00:02:24,180 --> 00:02:28,500
+o que precisamos fazer é reduzir o
+tempo
+
+41
+00:02:28,500 --> 00:02:32,830
+e o custo do desenvolvimento.
+Queremos entregar software rápido
+
+42
+00:02:32,830 --> 00:02:37,200
+e queremos entregar software correto.
+A questão é
+
+43
+00:02:37,200 --> 00:02:40,440
+como podemos fazer programas
+
+44
+00:02:40,440 --> 00:02:44,260
+de tal forma que estejamos confiantes de
+que nosso programa funciona
+
+45
+00:02:44,260 --> 00:02:47,609
+e como podemos fazer código
+
+46
+00:02:47,609 --> 00:02:50,959
+de tal forma que este código seja
+entregue rápido.
+
+47
+00:02:50,959 --> 00:02:54,370
+Ele não leva anos para ser entregue
+mas leva
+
+48
+00:02:54,370 --> 00:03:00,970
+meses ou o quanto precisar para ser.
+Uma forma de fazer isso, e nós vemos isso agora
+
+49
+00:03:00,970 --> 00:03:06,260
+em todas as linguagens de programação modernas,
+é adicionar recursos à nossas linguagens
+
+50
+00:03:06,260 --> 00:03:11,310
+isso permite programas serem escritos
+de forma clara e concisa e num alto nível de 
+
+51	
+00:03:11,310 --> 00:03:12,220
+abstração.
+
+52
+00:03:12,220 --> 00:03:16,319
+E as técnicas que usamos nestas
+linguagens modernas
+
+53
+00:03:16,319 --> 00:03:19,880
+são todas baseadas em programação funcional.
+Estas técnicas
+
+54
+00:03:19,880 --> 00:03:23,989
+são todas baseadas em conceitos do
+cálculo lambda.
+
+55
+00:03:23,989 --> 00:03:27,410
+E Haskell é uma 
+
+56
+00:03:27,410 --> 00:03:30,660
+linguagem funcional que é pura e
+portanto
+
+57
+00:03:30,660 --> 00:03:34,669
+um veículo realmente bom para ensinar
+estes conceitos.
+
+58
+00:03:34,669 --> 00:03:39,019
+Linguagens funcionais, 
+
+59
+00:03:39,019 --> 00:03:42,799
+portanto, fornecem um framework 
+muito elegante
+
+60
+00:03:42,799 --> 00:03:46,120
+para escrever código num alto nível
+de abstração.
+
+61
+00:03:46,120 --> 00:03:50,139
+Mas como eu disse, Haskell é apenas
+nosso veículo.
+
+62
+00:03:50,139 --> 00:03:55,329	
+O que aprendermos neste curso, vocês
+serão capazes de aplicar 
+
+63
+00:03:55,329 --> 00:03:59,169
+em qualquer linguagem mesmo que vocês
+programem em assembly
+
+64	
+00:03:59,169 --> 00:04:02,599
+ou Java ou PHP
+
+65
+00:04:02,599 --> 00:04:06,489
+ou JavaScript, todas as idéias que vocês
+irão aprender aqui
+
+66
+00:04:06,489 --> 00:04:09,720
+vocês podem aplicar imediatamente
+
+67
+00:04:09,720 --> 00:04:13,150
+em qualquer linguagem que
+estão felizes em usar.
+
+68
+00:04:13,150 --> 00:04:16,930
+O que é uma linguagem de programação
+funcional?
+
+69
+00:04:16,930 --> 00:04:20,700
+As ideias sobre isso 
+
+70
+00:04:20,700 --> 00:04:24,960
+variam, não há uma definição
+real clara.
+
+71
+00:04:24,960 --> 00:04:28,740
+Se pegarmos uma abordagem muito
+purista uma linguagem funcional
+
+72
+00:04:28,740 --> 00:04:32,800
+é uma linguagem na qual programamos
+usando funções matemáticas.
+
+73
+00:04:32,800 --> 00:04:37,980
+E essa definição se aplica a Haskell,
+que é uma linguagem pura, uma das 
+
+74
+00:04:37,980 --> 00:04:38,830
+muito poucas
+
+75
+00:04:38,830 --> 00:04:42,320
+linguagens de programação funcional que 
+são puras. Mas é claro que
+
+76
+00:04:42,320 --> 00:04:46,860
+quando eu digo que vamos usar estas
+técnicas para programar também em outras
+
+77
+00:04:46,860 --> 00:04:47,670
+linguagens
+
+78
+00:04:47,670 --> 00:04:52,020
+não podemos usar esta definição.
+
+79
+00:04:52,020 --> 00:04:56,020
+O que usaremos neste curso é a
+seguinte definição:
+
+80
+00:04:56,020 --> 00:04:56,930
+programação funcional
+
+81
+00:04:56,930 --> 00:05:00,900
+é um estilo de programação na qual
+
+82
+00:05:00,900 --> 00:05:04,310
+expressões são mais importantes do que
+usar declarações.
+
+83
+00:05:04,310 --> 00:05:09,000
+O que queremos fazer é: queremos
+compor programas usando expressões
+
+84
+00:05:09,000 --> 00:05:13,800
+e estas expressões entregam um valor, então
+pegamos duas expressões que entregam um
+
+85
+00:05:13,800 --> 00:05:14,530
+valor
+
+86
+00:05:14,530 --> 00:05:18,620
+e compomos elas em uma expressão maior.
+
+87
+00:05:18,620 --> 00:05:23,780
+Compare isso com escrever
+seus programas usando declarações.
+
+88
+00:05:23,780 --> 00:05:28,040
+Quando vocês compõem declarações, as
+declarações tem um side-effect implícito
+
+89
+00:05:28,040 --> 00:05:32,410
+no global state e eles
+comunicam valores por este global
+
+90
+00:05:32,410 --> 00:05:32,880
+state.
+
+91
+00:05:32,880 --> 00:05:36,000
+Enquanto que em um estilo de 
+programação
+
+92
+00:05:36,000 --> 00:05:40,620
+baseado em expressões retorna
+valores
+
+93
+00:05:40,620 --> 00:05:46,320
+e compomos estes valores diretamente.
+Uma linguagem de programação funcional
+
+94
+00:05:46,320 --> 00:05:50,190
+é uma linguagem que suporta e
+encoraja
+
+95
+00:05:50,190 --> 00:05:53,410
+escrever código usando expressões.
+
+96
+00:05:53,410 --> 00:05:57,230
+Como eu disse antes, a maioria 
+das linguagens modernas
+
+97
+00:05:57,230 --> 00:06:01,240
+agora suportam esse estilo.
+E elas suportam o estilo
+
+98
+00:06:01,240 --> 00:06:04,850
+especificamente através de 
+expressões lambda.
+
+99
+00:06:04,850 --> 00:06:08,830
+Veremos exemplos de programação
+funcional
+
+100
+00:06:08,830 --> 00:06:11,960
+em varias e varias linguagens
+à medida que progredimos
+
+101
+00:06:11,960 --> 00:06:15,430
+com este curso. Vamos 
+
+102
+00:06:15,430 --> 00:06:19,190
+iniciar com nosso primeiro fragmento
+de código aqui.
+
+103
+00:06:19,190 --> 00:06:22,440
+Isso é um pouco de Java antiquado
+
+104
+00:06:22,440 --> 00:06:27,070
+no qual computamos  a soma de 
+de inteiros de um a dez.
+
+105
+00:06:27,070 --> 00:06:31,250
+A forma com que faremos isso,
+como eu disse, no estilo imperativo
+
+106
+00:06:31,250 --> 00:06:33,820
+tradicional, que é baseado em fazer
+
+107
+00:06:33,820 --> 00:06:38,530
+declarações. A primeira coisa que fazemos
+é declarar uma variável total
+
+108
+00:06:38,530 --> 00:06:41,920
+de tipo int. Inicializamos ela com zero
+
+109
+00:06:41,920 --> 00:06:46,380
+e então escrevemos um for loop com uma
+variável loop.
+
+110
+00:06:46,380 --> 00:06:49,660
+Este int i, que vocês veem ali, vamos 
+
+111
+00:06:49,660 --> 00:06:53,530
+atribui-lo a esta variável total:
+
+112
+00:06:53,530 --> 00:06:57,100
+variável total + i. Aqui vocês veem que 
+
+113
+00:06:57,100 --> 00:07:00,240
+o programa está escrito 
+
+114
+00:07:00,240 --> 00:07:03,860
+em um estilo imperativo.
+Temos declarações,
+
+115
+00:07:03,860 --> 00:07:06,990
+temos um estado mutável e
+
+116
+00:07:06,990 --> 00:07:10,660
+imperativamente executa declaração 
+após declaração.
+
+117
+00:07:10,660 --> 00:07:14,160
+atualizando o estado para computar o 
+resultado.
+
+118
+00:07:14,160 --> 00:07:18,710
+Agora aqui está como vocês escreveriam o
+mesmo programa
+
+119
+00:07:18,710 --> 00:07:21,980
+em Haskell. A primeira coisa que vocês
+veem é que isto
+
+120
+00:07:21,980 --> 00:07:26,980
+é muito mais conciso, mas outra coisa 
+é que não existe declarações. São 
+
+121
+00:07:26,980 --> 00:07:30,230
+apenas duas expressões.
+A expressão que vocês veem
+
+122
+00:07:30,230 --> 00:07:33,430
+aqui
+
+123
+00:07:33,430 --> 00:07:36,740
+a direita. Um ponto ponto dez.
+
+124
+00:07:36,740 --> 00:07:40,300
+Cria uma lista de inteiros de um a 
+dez.
+
+125
+00:07:40,300 --> 00:07:43,920
+E então, apenas somamos estes
+inteiros.
+
+126
+00:07:43,920 --> 00:07:47,380
+Então, aqui vocês veem que compomos
+
+127
+00:07:47,380 --> 00:07:52,670
+o código tendo uma expressão.
+Uma que cria uma lista de um a dez
+
+128
+00:07:52,670 --> 00:07:56,600
+e então aplicamos este valor
+
+129
+00:07:56,600 --> 00:07:59,680
+a uma função sum que somará
+
+130
+00:07:59,680 --> 00:08:03,080
+para nós. No Java 8
+
+131
+00:08:03,080 --> 00:08:06,670
+vocês conseguem escrever o mesmo 
+código
+
+132
+00:08:06,670 --> 00:08:10,040
+usando streams, vamos
+
+133
+00:08:10,040 --> 00:08:14,070
+nos aprofundar em Java 8 em uma lição
+
+134
+00:08:14,070 --> 00:08:17,590
+futura mas por enquanto aqui
+está a forma que
+
+135
+00:08:17,590 --> 00:08:21,990
+fazemos em Haskell.
+Obrigado
+
+136
+00:08:21,990 --> 00:08:24,590
+e vejo vocês na segunda parte.
